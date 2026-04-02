@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Mohamed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: #050505; color: white; font-family: 'Poppins', sans-serif; overflow-x: hidden; }
+        .navbar { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: rgba(20, 20, 20, 0.7); backdrop-filter: blur(20px); border-radius: 50px; padding: 10px 40px; border: 1px solid rgba(255, 255, 255, 0.1); z-index: 1000; }
+        .nav-link { color: #666 !important; margin: 0 15px; font-weight: 600; }
+        .nav-link.active { color: #00d2ff !important; text-shadow: 0 0 10px #00d2ff; }
+
+        /* Diamond Photo Glow */
+        .photo-box {
+            width: 300px; height: 300px; margin: auto; position: relative;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background: #1a1a1a; border: 2px solid #00d2ff; box-shadow: 0 0 50px rgba(0, 210, 255, 0.2);
+        }
+        .photo-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Neon Skill Circles */
+        .skill-circle {
+            width: 130px; height: 130px; border-radius: 50%;
+            background: #111; border: 1px solid #333;
+            display: flex; align-items: center; justify-content: center;
+            margin: 25px auto; color: white; font-weight: 800; font-size: 0.8rem;
+            transition: 0.5s; box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+        }
+        .skill-circle:hover { border-color: #00d2ff; box-shadow: 0 0 30px rgba(0, 210, 255, 0.4); color: #00d2ff; transform: scale(1.1); }
+
+        footer { text-align: center; padding: 60px 0; color: #333; letter-spacing: 5px; font-size: 0.7rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand"><ul class="navbar-nav"><a class="nav-link" href="index.html">HOME</a><a class="nav-link active" href="aboutme.html">ABOUT</a><a class="nav-link" href="projects.html">PROJECTS</a><a class="nav-link" href="contact.html">CONTACT</a></ul></nav>
+
+    <div class="container" style="padding-top: 150px;">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5"><div class="photo-box"><img src="1.jpeg   " alt="Mohamed"></div></div>
+            <div class="col-lg-7 text-center text-lg-start">
+                <h2 class="display-4 fw-bold">I am <span style="color: #00d2ff; text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);">Mohamed Abdelrahman</span></h2>
+                <p class="text-secondary lead mt-4">A high school student in the 2nd grade, specializing in Web Site Development. Passionate about creating sleek, high-end digital experiences using modern code standards.</p>
+            </div>
+        </div>
+        <div class="mt-5 pt-5 text-center">
+            <h4 style="letter-spacing: 10px; color: #444; margin-bottom: 50px;">CORE TECHNOLOGIES</h4>
+            <div class="row">
+                <div class="col-md-3"><div class="skill-circle">HTML</div></div>
+                <div class="col-md-3"><div class="skill-circle">CSS</div></div>
+                <div class="col-md-3"><div class="skill-circle">JS</div></div>
+                <div class="col-md-3"><div class="skill-circle">BOOTSTRAP</div></div>
+            </div>
+        </div>
+    </div>
+    <footer>BY MOHAMED ABDELRAHMAN</footer>
+</body>
+</html>

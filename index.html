@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Abdelrahman | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --glow: #00d2ff; --bg: #050505; --grey: #1a1a1a; }
+        body {
+            background-color: var(--bg); color: white; font-family: 'Poppins', sans-serif;
+            min-height: 100vh; overflow-x: hidden; margin: 0;
+        }
+
+        /* --- Masterpiece Centered Navbar --- */
+        .navbar {
+            position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+            background: rgba(20, 20, 20, 0.6); backdrop-filter: blur(20px);
+            border-radius: 50px; padding: 10px 40px; border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .nav-link { color: #888 !important; font-weight: 600; margin: 0 15px; transition: 0.4s; font-size: 0.9rem; }
+        .nav-link:hover, .nav-link.active { color: var(--glow) !important; text-shadow: 0 0 15px var(--glow); }
+
+        /* --- Glow Background Decor --- */
+        .aura { position: absolute; width: 400px; height: 400px; background: var(--glow); filter: blur(180px); opacity: 0.15; z-index: -1; border-radius: 50%; }
+        .aura-1 { top: 10%; right: 10%; }
+        .aura-2 { bottom: 10%; left: 10%; }
+
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .hero h1 { font-family: 'Orbitron', sans-serif; font-size: 5rem; font-weight: 800; line-height: 1; }
+        .glitch-text { background: linear-gradient(to bottom, #fff 50%, #444); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .hero p { color: #888; font-size: 1.1rem; max-width: 700px; margin: 25px auto; letter-spacing: 1px; }
+
+        /* --- Premium Neon Button --- */
+        .btn-glow {
+            padding: 15px 50px; background: transparent; color: white; border: 1px solid var(--glow);
+            border-radius: 50px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px;
+            transition: 0.5s; position: relative; overflow: hidden;
+        }
+        .btn-glow:hover { background: var(--glow); color: black; box-shadow: 0 0 40px var(--glow); transform: translateY(-5px); }
+
+        footer { position: fixed; bottom: 20px; width: 100%; text-align: center; color: #444; font-size: 0.7rem; letter-spacing: 4px; }
+    </style>
+</head>
+<body>
+    <div class="aura aura-1"></div>
+    <div class="aura aura-2"></div>
+
+    <nav class="navbar navbar-expand">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutme.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h5 style="color: var(--glow); letter-spacing: 5px; font-weight: 600;">WEB ARCHITECT</h5>
+            <h1 class="glitch-text">MOHAMED<br>ABDELRAHMAN</h1>
+            <p>2nd Grade Student at Web Development Department. Building the next generation of digital interfaces with precision and style.</p>
+            <a href="projects.html" class="btn btn-glow mt-4">Discover More</a>
+        </div>
+    </div>
+
+    <footer>BY MOHAMED ABDELRAHMAN</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
